@@ -1,7 +1,10 @@
 <p>My Tasks today</p>
 <ul>
-    <li *ngFor="let toDo of toDos">{{ toDo }}<button (click)="delToDoList()">Delete</button></li>
+    <li *ngFor="let toDo of toDos, index as i">
+        {{ toDo }}<button (click)="delToDoList(i)">Delete</button>
+    </li>
 </ul>
-<b>Tasks: </b><input type="text" [(ngModel)]="toDo"/><button (click)="addToDoList()">Add</button>
+<b>Tasks: </b><input type="text" [(ngModel)]="toDo"/>
+<button (click)="addToDoList()">Add</button>
 
 

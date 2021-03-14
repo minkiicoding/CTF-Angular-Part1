@@ -13,7 +13,10 @@ export class ToDoListComponent {
         addToDoList() {       
             this.toDos.push(this.toDo)
     }
-        delToDoList() {
-            console.log('delete');
+        delToDoList(toDoIndex: number) {
+            //console.log(taskDetail);
+            this.toDos = this.toDos.filter((t, index) => index !==toDoIndex);
         }
 }
+
+

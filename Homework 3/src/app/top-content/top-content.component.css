@@ -1,0 +1,26 @@
+p {
+    color: white;
+}
+
+.topHeader {
+    background-color: tomato;
+    height: 200px;
+}
+
+button {
+    margin: 0px 5px;
+    height: 45px;
+    width: 150px;
+    border-radius: 5px;
+    border-color: tomato;
+    
+}
+
+#color {
+    background-color:tomato;
+    color: white;
+}
+
+#textcolor {
+    color:tomato;
+}
